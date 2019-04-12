@@ -7,17 +7,17 @@ namespace Mercado.Entities
 {
     public class Product
     {
-        public int Quantity { get; set; }
+        public string Name { get; set; }
         public double Price { get; set; }
 
         public Product()
         {
         }
 
-        public Product(int quantity, double price)
+        public Product(int name, double price)
         {
-            quantity = Quantity;
-            price = Price; 
+            Name = Name;
+            Price = price; 
         }
     } 
 }
