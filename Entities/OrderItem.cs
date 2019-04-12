@@ -9,17 +9,18 @@ namespace Mercado.Entities
     {
         public int Quantity { get; set; }
         public double Price { get; set; }
+        public Product Prod {get; set;} = new Product();
 
-        
+
 
         public OrderItem()
         {            
         }
 
-        public OrderItem(int quantity, double Price)
+        public OrderItem(int quantity)
         {
             Quantity = quantity;
-            Price = price;
+            Price = Product.price;
         } 
 
         public double SubTotal()
