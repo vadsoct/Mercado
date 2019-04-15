@@ -39,8 +39,9 @@ namespace Mercado
         public double total()
         {
             foreach(OrderItem orders  in orderItens ){
-            double p = p += OrderItem.subTotal();
+            double p = p += OrderItem.subTotal();            
             } 
+            return p;
         }
 
     }

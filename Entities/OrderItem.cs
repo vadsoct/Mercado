@@ -21,6 +21,7 @@ namespace Mercado.Entities
         {
             Quantity = quantity;
             Price = Product.price;
+            Name = Product.name;
         } 
 
         public double SubTotal()
