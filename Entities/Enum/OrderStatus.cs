@@ -1,5 +1,11 @@
-namespace Mercado.Entities.Enums
+using System;
+using System.Text;
+using Mercado.Entities;
+using Mercado.Entities.Enums;
+using System.Collections;
+using System.Globalization;
 
+namespace Mercado.Entities.Enums
 {
     enum OrderStatus : int
     {

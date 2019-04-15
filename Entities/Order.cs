@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 using System.Globalization;
-using System.Collections;
+using System.Collections.Generic;
 using Mercado.Entities.Enums;
 using Mercado.Entities;
 
@@ -12,7 +12,7 @@ namespace Mercado
         public DateTime Moment { get; set; }
         public OrderStatus Status { get; set; }
         public Client Cliente { get; set;} 
-        public list<OrderItem> orderItens { get; set; } = new list<OrderItem>();
+        public list<OrderItem> orderItem { get; set; } = new list<OrderItem>();
 
         public Order()
         {            
@@ -27,20 +27,20 @@ namespace Mercado
         }
  
 
-        public void addOrder(OrderItem item )
+        public void addOrder(OrderItem orderItem )
         {
-            orderItem.Add(item);
+            orderItem.Add(orderItem);
         }
 
-        public void addOrder(OrderItem item )
+        public void addOrder(OrderItem orderItem )
         {
-            orderItem.remove(item);
+            orderItem.remove(orderItem);
         }
 
         public double total()
         {
             double p = 0.0;
-            foreach(OrderItem item  in orderItens ){
+            foreach(OrderItem item  in orderItem ){
             p += OrderItem.subTotal();            
             } 
             return p;
