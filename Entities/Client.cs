@@ -21,7 +21,7 @@ namespace Mercado.Entities
     {
         Nome = nome;
         Email = email;
-        birthDate = BirthDate;
+        BirthDate = birthDate;
     }
 
     public override string ToString()

@@ -1,13 +1,14 @@
 using System;
 using System.Text;
-using Mercado.Entities;
-using Mercado.Entities.Enums;
-using System.Collections;
 using System.Globalization;
+using System.Collections;
+using Mercado.Entities.Enums;
+using Mercado.Entities;
+using System.Collections.Generic;
 
 namespace Mercado.Entities.Enums
 {
-    enum OrderStatus : int
+    public enum OrderStatus : int
     {
         Pending_Payment = 0,
         Processing = 1,
