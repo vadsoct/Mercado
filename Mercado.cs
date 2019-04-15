@@ -20,14 +20,34 @@ namespace Mercado
             DateTime nascimento = DateTime.Parse(Console.ReadLine());
 
             Client C1 = new Cliente(name,email,nascimento); 
+    
+            string moment = DateTime.Now;
             OrderStatus orderStat = Enum.Parse<OrderStatus>(Processing);
+            Order A1  = new Order(moment, orderStat,C1);
 
-            System.Console.WriteLine("how many orders ?" ); 
+            System.Console.WriteLine("How many duferents itens will be bought: ");
             int n = int.Parse(Console.ReadLine());
-            for(int i = 0; i <= n; i++)
+
+            for(int i=0; i <= n; i++)
             {
+                System.Console.WriteLine("Enter with the name of Product: ");
+                string NProdutc = Console.ReadLine();
+                System.Console.WriteLine("enter with the product price: ");
+                double PPrice = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
                 
+                Product Produto = new Product(NProduto,PPrice);
+
+                System.Console.WriteLine("Quantity: ");
+                int quantity = int.Parse(Console.ReadLine());
+
+                OrderItem orderItem = new OrderItem(quantity, PPrice, Produto);
+
+                A1.addOrder(orders);
             }
+
+            System.Console.WriteLine();
+            System.Console.WriteLine("Order summary: ");
+            System.Console.WriteLine(Order);
 
 
         }

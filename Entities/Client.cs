@@ -10,6 +10,9 @@ namespace Mercado.Entities
     public string Name { get; set; }
     public string Email { get; set; }
     public DateTime BirthDate { get; set; }
+    
+
+
 
     public Client()
     {
@@ -20,6 +23,15 @@ namespace Mercado.Entities
         Email = email;
         birthDate = BirthDate;
     }
+
+    public override string ToString()
+        {
+            return Name 
+                + ", (" 
+                + BirthDate.ToString("dd/MM/yyyy") 
+                + ") - " 
+                + Email;
+        }
 
     }
 }
