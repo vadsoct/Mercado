@@ -2,3 +2,10 @@ C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercad
 C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.csproj.CoreCompileInputs.cache
 C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.AssemblyInfoInputs.cache
 C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.AssemblyInfo.cs
+C:\Users\victors\Desktop\C# Intermediario\mercado\bin\Debug\netcoreapp2.1\mercado.deps.json
+C:\Users\victors\Desktop\C# Intermediario\mercado\bin\Debug\netcoreapp2.1\mercado.runtimeconfig.json
+C:\Users\victors\Desktop\C# Intermediario\mercado\bin\Debug\netcoreapp2.1\mercado.runtimeconfig.dev.json
+C:\Users\victors\Desktop\C# Intermediario\mercado\bin\Debug\netcoreapp2.1\mercado.dll
+C:\Users\victors\Desktop\C# Intermediario\mercado\bin\Debug\netcoreapp2.1\mercado.pdb
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.dll
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.pdb

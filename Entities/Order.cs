@@ -29,19 +29,19 @@ namespace Mercado
 
         public void addItem(OrderItem item )
         {
-            Item.Add(item);
+            Items.Add(item);
         }
 
         public void removeItem(OrderItem item )
         {
-            Item.remove(item);
+            Items.Remove(item);
         }
 
         public double Total()
         {
             double p = 0.0;
-            foreach(OrderItem item  in Item ){
-            p += OrderItem.subTotal();            
+            foreach(OrderItem item  in Items ){
+            p += item.SubTotal();            
             } 
             return p;
         }
@@ -51,7 +51,7 @@ namespace Mercado
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Order moment: " + Moment.ToString("dd/MM/yyyy HH:mm:ss"));
             sb.AppendLine("Order status: " + Status);
-            sb.AppendLine("Client: " + Client);
+            sb.AppendLine("Client: " + Cliente);
             sb.AppendLine("Order items:");
             foreach (OrderItem item in Items)
             {

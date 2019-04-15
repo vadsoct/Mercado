@@ -23,7 +23,7 @@ namespace Mercado
             System.Console.Write("Status: ");            
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
 
-            Client client = new Cliente(clientname,email,nascimento);             
+            Client client = new Client(clientname,email,nascimento);             
             Order order  = new Order(DateTime.Now, status, client);
 
             System.Console.WriteLine("How many diferents itens will be bought: ");
@@ -32,7 +32,7 @@ namespace Mercado
             for(int i=0; i <= n; i++)
             {
                 System.Console.WriteLine("Enter with the name of Product: ");
-                string NProdutc = Console.ReadLine();
+                string NProduto = Console.ReadLine();
                 System.Console.WriteLine("enter with the product price: ");
                 double PPrice = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
                 
@@ -43,12 +43,12 @@ namespace Mercado
 
                 OrderItem orderItem = new OrderItem(quantity, PPrice, Produto);
 
-                A1.addOrder(orderItem);
+                order.addItem(orderItem);
             }
 
             System.Console.WriteLine();
             System.Console.WriteLine("Order summary: ");
-            System.Console.WriteLine(Order);
+            System.Console.WriteLine(order);
 
 
         }

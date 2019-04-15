@@ -17,7 +17,7 @@ namespace Mercado.Entities
         {
         }
 
-        public Product(int name, double price)
+        public Product(string name, double price)
         {
             Name = name;
             Price = price; 

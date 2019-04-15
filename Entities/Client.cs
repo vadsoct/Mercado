@@ -1,4 +1,5 @@
 using System;
+using Mercado.Entities;
 using Mercado.Entities.Enums;
 using System.Collections;
 using System.Globalization;
@@ -19,7 +20,7 @@ namespace Mercado.Entities
     }
     public Client(string nome, string email , DateTime birthDate)
     {
-        Nome = nome;
+        Name = nome;
         Email = email;
         BirthDate = birthDate;
     }
