@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using Mercado.Entities.Enums;
 using System.Collections;
 using System.Globalization;
@@ -16,7 +17,7 @@ namespace Mercado.Entities
 
         public Product(int name, double price)
         {
-            Name = Name;
+            Name = name;
             Price = price; 
         }
     } 

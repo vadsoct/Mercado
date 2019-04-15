@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using Mercado.Entities.Enums;
 using System.Collections;
 using System.Globalization;
@@ -9,7 +10,7 @@ namespace Mercado.Entities
     {
         public int Quantity { get; set; }
         public double Price {get; set;}
-        public Product Prod {get; set;} 
+        public Product Product {get; set;} 
 
 
 

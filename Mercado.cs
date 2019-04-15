@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Globalization;
 using System.Collections;
 using Mercado.Entities.Enums;
@@ -11,19 +12,17 @@ namespace Mercado
         static void Main(string[] args)
         {
             System.Console.WriteLine("Quais os dados do Cliente: ");
-            
             System.Console.WriteLine("Nome: ");
-            string name = Console.ReadLine();
+            string clientname = Console.ReadLine();
             System.Console.WriteLine("E-mail: ");
             string email = Console.ReadLine();
             System.Console.WriteLine("Nascimento: (DD/MM/YYYY)");
             DateTime nascimento = DateTime.Parse(Console.ReadLine());
             System.Console.WriteLine("Enter order data: ");
-            System.Console.Write("Status: ");
-            
-            OrderStatus status = Enum.Parse<OrderStatus>(Processing);
+            System.Console.Write("Status: ");            
+            OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
 
-            Client client = new Cliente(name,email,nascimento);             
+            Client client = new Cliente(clientname,email,nascimento);             
             Order order  = new Order(DateTime.Now, status, client);
 
             System.Console.WriteLine("How many diferents itens will be bought: ");
@@ -43,7 +42,7 @@ namespace Mercado
 
                 OrderItem orderItem = new OrderItem(quantity, PPrice, Produto);
 
-                A1.addOrder(orders);
+                A1.addOrder(orderItem);
             }
 
             System.Console.WriteLine();

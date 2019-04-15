@@ -1,4 +1,5 @@
 namespace Mercado.Entities.Enums
+
 {
     enum OrderStatus : int
     {
