@@ -18,14 +18,15 @@ namespace Mercado
             string email = Console.ReadLine();
             System.Console.WriteLine("Nascimento: (DD/MM/YYYY)");
             DateTime nascimento = DateTime.Parse(Console.ReadLine());
+            System.Console.WriteLine("Enter order data: ");
+            System.Console.Write("Status: ");
+            
+            OrderStatus status = Enum.Parse<OrderStatus>(Processing);
 
-            Client C1 = new Cliente(name,email,nascimento); 
-    
-            string moment = DateTime.Now;
-            OrderStatus orderStat = Enum.Parse<OrderStatus>(Processing);
-            Order A1  = new Order(moment, orderStat,C1);
+            Client client = new Cliente(name,email,nascimento);             
+            Order order  = new Order(DateTime.Now, status, client);
 
-            System.Console.WriteLine("How many duferents itens will be bought: ");
+            System.Console.WriteLine("How many diferents itens will be bought: ");
             int n = int.Parse(Console.ReadLine());
 
             for(int i=0; i <= n; i++)

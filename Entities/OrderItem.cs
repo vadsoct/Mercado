@@ -8,7 +8,8 @@ namespace Mercado.Entities
     public class OrderItem
     {
         public int Quantity { get; set; }
-        public Product Prod {get; set;} = new Product();
+        public double Price {get; set;}
+        public Product Prod {get; set;} 
 
 
 
@@ -16,17 +17,16 @@ namespace Mercado.Entities
         {            
         }
 
-        public OrderItem(int quantity)
+        public OrderItem(int quantity, double price, Product product)
         {
             Quantity = quantity;
-            Price = Product.price;
-            Name = Product.name;
+            Price = price;
+            Product = product;
         } 
 
         public double SubTotal()
         {
-            double st = Price * Quantity;
-            return st;
+            return Price * Quantity;
         }
         
          public override string ToString()

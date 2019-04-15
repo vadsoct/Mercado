@@ -1,0 +1,4 @@
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.csprojAssemblyReference.cache
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.csproj.CoreCompileInputs.cache
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.AssemblyInfoInputs.cache
+C:\Users\victors\Desktop\C# Intermediario\mercado\obj\Debug\netcoreapp2.1\mercado.AssemblyInfo.cs
